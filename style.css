@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700;900&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=DM+Sans:wght@400;700&family=Dancing+Script:wght@500&family=Fraunces:wght@700;900&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700;900&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --Soft: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+    /*(graphic design text)*/
+    --Dark-blue: hsl(198, 62%, 26%);
+    /*(photography text)*/
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);
+    /*(footer)*/
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+
+header {
+    height: 90vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-sunnysida {
+    padding: 2.19rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-sunnysida ul,
+a {
+    padding: 0 1.5rem;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Barlow', sans-serif;
+}
+
+.icon-hamburger {
+    display: none;
+}
+
+.head-menu {
+    color: white;
+}
+
+.contact a {
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+.contact a:hover {
+    background-color: rgb(171, 211, 235);
+    color: white;
+}
+
+
+header h1 {
+    font-family: 'Fraunces', serif;
+    color: white;
+    font-size: 5rem;
+    margin-top: 5rem;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+header .icon-arrow {
+    width: 3.5%;
+    margin-top: 2.5rem;
+}
+
+.mobile-menu {
+    display: none;
+    list-style: none;
+}
+
+/*section1*/
+
+.section-one {
+    width: 100%;
+}
+
+.transform-egg {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.transform-your-brand {
+    width: 50%;
+    padding: 20rem 7rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.egg {
+    width: 50%;
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.transform-your-brand h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+}
+
+.transform-your-brand p {
+    line-height: 1.5;
+    margin-top: 2.8rem;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+}
+
+.transform-your-brand a {
+    color: black;
+    margin-top: 2.8rem;
+    margin-left: -1.2rem;
+    font-size: 0.8rem;
+    font-family: 'Fraunces', serif;
+    text-decoration: 3px underline hsl(51, 100%, 49%);
+    text-transform: uppercase;
+}
+
+.tand {
+    display: flex;
+}
+
+.stand-out {
+    width: 50%;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(17, 17, 17);
+}
+
+.stand-out-to {
+    width: 50%;
+    padding: 20rem 7rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.stand-out-to h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+}
+
+.stand-out-to p {
+    line-height: 1.5;
+    margin-top: 2.8rem;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+}
+
+.stand-out-to a {
+    color: black;
+    margin-top: 2.8rem;
+    margin-left: -1.2rem;
+    font-size: 0.8rem;
+    font-family: 'Fraunces', serif;
+    text-decoration: 3px underline hsl(7, 99%, 70%);
+    text-transform: uppercase;
+}
+
+.graphi-Photography {
+    display: flex;
+}
+
+.graphic {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 9rem;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.graphic h1 {
+    line-height: 3;
+    padding-top: 20rem;
+    color: hsl(167, 40%, 24%);
+    font-family: 'Fraunces', serif;
+}
+
+.graphic p {
+    line-height: 1.5;
+    color: hsl(168, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+}
+
+.Photography {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Photography h1 {
+    line-height: 3;
+    padding-top: 20rem;
+    color: hsl(198, 62%, 26%);
+    font-family: 'Fraunces', serif;
+}
+
+.Photography p {
+    line-height: 1.5;
+    color: hsl(198, 62%, 26%);
+    font-family: 'Barlow', sans-serif;
+}
+
+/*section2*/
+
+.section-tow {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.section-tow h1 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 165px;
+    text-align: center;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Fraunces', serif;
+}
+
+.people {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-people {
+    width: 72px;
+    height: 72px;
+    margin-top: 80px;
+    border-radius: 50%;
+}
+
+.people-text {
+    line-height: 1.5;
+    margin-top: 60px;
+    font-size: 1.2rem;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+}
+
+.people-name {
+    margin-top: 75px;
+    font-family: 'Fraunces', serif;
+}
+
+.people-span {
+    margin-top: 13px;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+}
+
+/*section3*/
+
+.section-three {
+    display: flex;
+    margin-top: 162px;
+}
+
+.milk-orange {
+    width: 100%;
+    display: flex;
+
+}
+
+.milk {
+    width: 100%;
+    height: 65vh;
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orange-img {
+    width: 100%;
+    height: 65vh;
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cone-cubles {
+    width: 100%;
+    display: flex;
+}
+
+.cone {
+    width: 100%;
+    height: 65vh;
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.culbes {
+    width: 100%;
+    height: 65vh;
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    background-color: hsl(168, 34%, 41%);
+}
+
+footer h1 {
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    color: hsl(167, 40%, 24%);
+}
+
+.menu-footer ul {
+    gap: 2.5rem;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    font-size: 1.2rem;
+    color: hsl(167, 40%, 24%);
+    margin-top: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.icon-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 20px -20px;
+}
+
+.footer-menu {
+    cursor: pointer;
+}
+
+.footer-menu:hover {
+    color: white;
+}
+
+@media (max-width: 1099px) {
+    header h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    header .icon-arrow {
+        width: 5.5%;
+        margin-top: 6.rem;
+    }
+
+    .transform-your-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    .stand-out-to h1 {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .icon-hamburger {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        top: 14%;
+        left: 59.7%;
+        width: 36%;
+        position: absolute;
+        padding: 4rem 4rem;
+        background-color: white;
+    }
+
+    .mobile-menu::before {
+        content: "";
+        position: absolute;
+        bottom: 98%;
+        left: 92.3%;
+        transform: translateX(-48%);
+        border-top: 50px solid transparent;
+        border-right: 40px solid white;
+    }
+
+
+    .mobile-menu ul,
+    a {
+        display: grid;
+        list-style: none;
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu a {
+        color: hsl(212, 27%, 19%);
+    }
+
+    .mobile-menu .contact a {
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    header .icon-arrow {
+        width: 7.5%;
+        margin-top: 7.5rem;
+    }
+
+    .egg,
+    .stand-out {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .transform-egg,
+    .tand {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transform-your-brand,
+    .stand-out-to {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem 3.5rem;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .transform-your-brand h1 {
+        font-size: 2rem;
+    }
+
+    .transform-your-brand a {
+        margin-left: 4.5rem;
+    }
+
+    .stand-out-to a {
+        margin-left: 4.5rem;
+    }
+
+    .graphi-Photography {
+        flex-direction: column;
+    }
+
+    .graphic,
+    .Photography {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .people {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .people-text {
+        padding: 1.5rem 4rem;
+        margin-top: 35px;
+    }
+
+    .people-name {
+        margin-top: 35px;
+    }
+
+    .section-three {
+        flex-direction: column;
+    }
+
+    .milk,
+    .orange-img,
+    .cone,
+    .culbes {
+        width: 100%;
+        height: 30vh;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+    .mobile-menu {
+        display: none;
+        top: 14%;
+        left: 38.6%;
+        width: 55%;
+        position: absolute;
+        padding: 4rem 4rem;
+        background-color: white;
+    }
+
+    .mobile-menu::before {
+        content: "";
+        position: absolute;
+        bottom: 98%;
+        left: 92.3%;
+        transform: translateX(-49%);
+        border-top: 50px solid transparent;
+        border-right: 40px solid white;
+    }
+}
